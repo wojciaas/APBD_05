@@ -11,7 +11,8 @@ public class MockDb
         new Animal("Polly", "Bird", 1, "Green"),
         new Animal("Goldie", "Fish", 0.5, "Gold"),
         new Animal("Buddy", "Dog", 6, "Black"),
-        new Animal("Whiskers", "Cat", 4, "Gray")
+        new Animal("Whiskers", "Cat", 4, "Gray"),
+        new Animal("Pete", "Bird", 1.5, "Blue"),
     };
     
     public static readonly List<Visit> _visits = new()
