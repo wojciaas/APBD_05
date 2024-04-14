@@ -6,10 +6,12 @@ public class MockDb
 {
     public static readonly List<Animal> _animals = new()
     {
-        new Animal("Rex", Animal.AnimalType.Dog, 5, Animal.Color.Brown),
-        new Animal("Whiskers", Animal.AnimalType.Cat, 3, Animal.Color.White),
-        new Animal("Fluffy", Animal.AnimalType.Bird, 1, Animal.Color.White),
-        new Animal("Bubbles", Animal.AnimalType.Fish, 1, Animal.Color.White)
+        new Animal("Rex", "Dog", 5, "Brown"),
+        new Animal("Mittens", "Cat", 3, "White"),
+        new Animal("Polly", "Bird", 1, "Green"),
+        new Animal("Goldie", "Fish", 0.5, "Gold"),
+        new Animal("Buddy", "Dog", 6, "Black"),
+        new Animal("Whiskers", "Cat", 4, "Gray")
     };
     
     public static readonly List<Visit> _visits = new()
@@ -18,6 +20,7 @@ public class MockDb
         new Visit(_animals[1], "Vaccination", 30),
         new Visit(_animals[2], "Beak trimming", 20),
         new Visit(_animals[3], "Water quality check", 10),
-        new Visit(_animals[0], "Dental cleaning", 100)
+        new Visit(_animals[0], "Dental cleaning", 100),
+        new Visit(_animals[1], "Flea treatment", 40)
     };
 }
